@@ -1,0 +1,24 @@
+{
+  "name": "VIP Study Bot",
+  "description": "Telegram Study Material Extractor Bot",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Telegram Bot Token from @BotFather",
+      "required": true
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-apt"
+    }
+  ]
+}
